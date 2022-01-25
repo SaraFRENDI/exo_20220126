@@ -1,6 +1,6 @@
 ## Exercice du 26 janvier 2022 / Antoine Courtin  
 
-### faire afficher sur une carte, les lieux de conservation pour les sculptures d'Auguste Rodin uniquement conservées aux Etat-Unis 
+### Faire afficher sur une carte, les lieux de conservation pour les sculptures d'Auguste Rodin uniquement conservées aux Etat-Unis 
 
 #### La requette Wikidata Query 
 
