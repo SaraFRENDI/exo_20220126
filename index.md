@@ -3,8 +3,21 @@
 ### Faire afficher sur une carte, les lieux de conservation pour les sculptures d'Auguste Rodin uniquement conservées aux Etat-Unis 
 
 #### La requette Wikidata Query 
+````sparql
+#defaultView:Map
+SELECT ?item ?itemLabel  ?image ?lieudeconservation ?coord WHERE { 
+   ?item wdt:P170 wd:Q30755.
+  ?item wdt:P31 wd:Q860861 .
+  ?lieudeconservation wdt:P17 wd:Q30.
+  ?item wdt:P18 ?image .
+  ?item wdt:P276 ?lieudeconservation.
+ ?lieudeconservation wdt:P625 ?coord .
 
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://w.wiki/4jrA" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+````
+ 
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en ". }
+}
 
 #### La carte géographique  
 
